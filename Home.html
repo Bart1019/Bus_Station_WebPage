@@ -25,9 +25,10 @@
         }
 
         nav {
+            display: flex;
+            flex-direction: column;
             background-color: lightslategray;
             align-self: stretch;
-            padding: 20px 0px;
         }
 
         header {
@@ -41,7 +42,7 @@
             background-color: maroon;
             flex-grow: 1;
             width: 100%;
-            max-width: 1200px;
+            max-width: 1500px;
             align-content: center;
         }
 
@@ -62,16 +63,37 @@
             flex-basis: 200px;
         }
 
+        .bottomNav {
+            background-color: coral;
+            padding: 0;
+        }
+
+        .coronaNav {
+            background-color: yellow;
+            color: black;
+        }
+
+        .topNav {
+            padding: 20px 0;
+            background-color: grey;
+        }
     </style>
 </head>
 <body>
-    <nav>Nav</nav>
+    <nav>
+        <div class="topNav">Nav Top</div>
+        <div class="coronaNav">Corona info</div>
+    </nav>
     <header>Header</header>
     <section>
         <main>Main</main>
         <aside>Side</aside>
     </section>
-    <footer>Footer</footer>
+
+    <footer>
+        <nav class="bottomNav">Bottom Nav</nav>
+        <div>Bottom Nav content</div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
