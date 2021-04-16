@@ -63,7 +63,8 @@
             color: black;
         }
 
-        .bottomNav {
+        .topNav {
+            display: flex;
             background-color: rgba(0, 0, 0, .84);
             color: white;
         }
@@ -72,17 +73,37 @@
             background-color:  rgba(255, 234, 100);
         }
 
-        .topNav {
+        .bottomNav {
+            display: flex;
             background-color: rgba(0, 0, 0, .84);
             color: white;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <nav>
-        <div class="topNav">Top Nav
-            <div></div>
-            <div></div>
+        <div class="topNav">
+            <a href="">Logo</a>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Tickets</li>
+                <li>Schedules</li>
+                <li>Flags</li>
+            </ul>
         </div>
         <div class="coronaNav">Corona info</div>
     </nav>
@@ -95,7 +116,18 @@
     </section>
 
     <footer>
-        <nav class="bottomNav">Bottom Nav</nav>
+        <div class="bottomNav">
+            <div>
+                Sign Up for our Newsletter
+            </div>
+            <ul>
+                <li>Contact</li>
+                <li>Maps</li>
+                <li>FAQ</li>
+                <li>Get Around</li>
+                <li>News</li>
+            </ul>
+        </div>
         <div>Bottom Nav content
             <div></div>
             <div></div>
