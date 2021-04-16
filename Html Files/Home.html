@@ -20,7 +20,6 @@
             min-height: 150vh;
             flex-wrap: wrap;
             font-family: 'Segoe UI', sans-serif;
-            color: white;
             font-size: 30px;
         }
 
@@ -58,33 +57,38 @@
         }
 
         footer {
-            background-color: midnightblue;
+            background-color: rgba(232, 228, 228);
             align-self: stretch;
             flex-basis: 200px;
-        }
-
-        .bottomNav {
-            background-color: coral;
-            padding: 0;
-        }
-
-        .coronaNav {
-            background-color: yellow;
             color: black;
         }
 
+        .bottomNav {
+            background-color: rgba(0, 0, 0, .84);
+            color: white;
+        }
+
+        .coronaNav {
+            background-color:  rgba(255, 234, 100);
+        }
+
         .topNav {
-            padding: 20px 0;
-            background-color: grey;
+            background-color: rgba(0, 0, 0, .84);
+            color: white;
         }
     </style>
 </head>
 <body>
     <nav>
-        <div class="topNav">Nav Top</div>
+        <div class="topNav">Top Nav
+            <div></div>
+            <div></div>
+        </div>
         <div class="coronaNav">Corona info</div>
     </nav>
-    <header>Header</header>
+    <header>Header
+        <div></div>
+    </header>
     <section>
         <main>Main</main>
         <aside>Side</aside>
@@ -92,7 +96,10 @@
 
     <footer>
         <nav class="bottomNav">Bottom Nav</nav>
-        <div>Bottom Nav content</div>
+        <div>Bottom Nav content
+            <div></div>
+            <div></div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
