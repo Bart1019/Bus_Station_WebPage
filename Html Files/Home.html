@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valencia Bus Station</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <style>
         * {
             padding: 0;
@@ -30,18 +31,42 @@
             align-self: stretch;
         }
 
+        .topNav {
+            display: flex;
+            background-color: rgba(0, 0, 0, .84);
+            color: white;
+            flex-basis: 100px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .coronaNav {
+            background-color:  rgba(255, 234, 100);
+        }
+
+
         header {
-            background-color: lightsteelblue;
+            display: flex;
             align-self: stretch;
-            flex-basis: 200px;
+            flex-basis: 400px;
+            align-items: center;
+            justify-content: center;
+            background-image: url('../Photos/vlc.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header div {
+            height: 300px;
+            width: 300px;
+            background-color: cornflowerblue;
         }
 
         section {
             display: flex;
             background-color: maroon;
             flex-grow: 1;
-            width: 100%;
-            align-content: center;
+            align-self: stretch;
         }
 
         main {
@@ -50,9 +75,8 @@
         }
 
         aside {
-            flex-basis: 30%;
-            min-width: 300px;
             background-color: cadetblue;
+            flex-basis: 30%;
         }
 
         footer {
@@ -60,16 +84,6 @@
             align-self: stretch;
             flex-basis: 200px;
             color: black;
-        }
-
-        .topNav {
-            display: flex;
-            background-color: rgba(0, 0, 0, .84);
-            color: white;
-        }
-
-        .coronaNav {
-            background-color:  rgba(255, 234, 100);
         }
 
         .bottomNav {
@@ -89,6 +103,29 @@
         a {
             color: white;
             text-decoration: none;
+            margin-left: 30px;
+            margin-right: auto;
+        }
+
+        a i, ul i {
+            font-size: 40px;
+        }
+
+        ul i {
+            margin-right: 40px;
+            cursor: pointer;
+        }
+
+        .offBigUl {
+            display: flex;
+        }
+
+        .offMobileUl {
+            display: none;
+        }
+
+        .headerImg{
+            opacity: .75;
         }
 
         @media (min-width: 769px) and (max-width: 1024px) {
@@ -98,8 +135,31 @@
         }
 
         @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+            }
+
+            aside {
+                flex-basis: 150px;
+                background-image: url('../Photos/maps.PNG');
+                /* background-position: center; */
+                background-position-y: 380px;
+                background-position-x: center;
+                border: 2px solid grey;
+            }
+
             header {
-                background-color: chocolate
+                background-image: url('../Photos/vlc.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            
+            .offBigUl { 
+                display: none;
+            }
+
+            .offMobileUl {
+                display: block;
             }
         }
 
@@ -109,23 +169,26 @@
 <body>
     <nav>
         <div class="topNav">
-            <a href="">Logo</a>
-            <ul>
-                <li>Home</li>
-                <li>Contact</li>
-                <li>Tickets</li>
-                <li>Schedules</li>
-                <li>Flags</li>
+            <a href="">Valencia <i class="fas fa-bus-alt"></i> Bus Station</a>
+            <ul class="offBigUl">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <ul class="offMobileUl">
+                <i class="fas fa-bars"></i>
             </ul>
         </div>
         <div class="coronaNav">Corona info</div>
     </nav>
-    <header>Header
+    <header class="headerImg">
         <div></div>
     </header>
     <section>
         <main>Main</main>
-        <aside>Side</aside>
+        <aside></aside>
     </section>
 
     <footer>
@@ -134,11 +197,11 @@
                 Sign Up for our Newsletter
             </div>
             <ul>
-                <li>Contact</li>
-                <li>Maps</li>
-                <li>FAQ</li>
-                <li>Get Around</li>
-                <li>News</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
             </ul>
         </div>
         <div>Bottom Nav content
