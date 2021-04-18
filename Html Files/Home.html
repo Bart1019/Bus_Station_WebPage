@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valencia Bus Station</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <style>
         * {
@@ -128,9 +128,32 @@
             opacity: .75;
         }
 
+        .dropDownMenu {
+            display: flex;
+            background-color: rgba(0, 0, 0, .84);
+            height: 50px;
+            border-top: 3px solid white;
+            color: white;
+            justify-content: center;
+        }
+
+        .off {
+            display: none;
+        }
+
+        @media (min-width: 1025px) {
+            .wrapper {
+                display: none;
+            }
+        }
+
         @media (min-width: 769px) and (max-width: 1024px) {
             header {
                 background-color: brown
+            }
+
+            .wrapper {
+                display: none;
             }
         }
 
@@ -181,6 +204,13 @@
                 <i class="fas fa-bars"></i>
             </ul>
         </div>
+        <div class="wrapper">
+            <div class="dropDownMenu">Home</div>
+            <div class="dropDownMenu">Contact</div>
+            <div class="dropDownMenu">Tickets</div>
+            <div class="dropDownMenu">Schedules</div>
+            <div class="dropDownMenu"></div>
+        </div>
         <div class="coronaNav">Corona info</div>
     </nav>
     <header class="headerImg">
@@ -209,6 +239,6 @@
             <div></div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
