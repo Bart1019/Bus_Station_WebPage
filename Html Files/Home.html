@@ -49,17 +49,16 @@
             display: flex;
             align-self: stretch;
             flex-basis: 400px;
-            align-items: center;
-            justify-content: center;
+            align-items: stretch;
             background-image: url('../Photos/vlc.jpg');
             background-size: cover;
             background-position: center;
         }
 
         header div {
-            height: 300px;
-            width: 300px;
-            background-color: cornflowerblue;
+            display: flex;
+            width: 100%;
+            border: red 2px solid;
         }
 
         section {
@@ -88,8 +87,11 @@
 
         .bottomNav {
             display: flex;
+            flex-direction: column;
+            align-items: center;
             background-color: rgba(0, 0, 0, .84);
             color: white;
+            padding: 8px 0;
         }
 
         ul {
@@ -98,6 +100,8 @@
 
         li {
             list-style: none;
+            padding-top: 8px;
+            /* padding-bottom: 8px; */
         }
 
         a {
@@ -107,6 +111,12 @@
             margin-right: auto;
         }
 
+        div ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         a i, ul i {
             font-size: 40px;
         }
@@ -114,6 +124,12 @@
         ul i {
             margin-right: 40px;
             cursor: pointer;
+        }
+
+        .footerIcons {
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0;
         }
 
         .offBigUl {
@@ -186,7 +202,6 @@
             }
         }
 
-
     </style>
 </head>
 <body>
@@ -204,7 +219,7 @@
                 <i class="fas fa-bars"></i>
             </ul>
         </div>
-        <div class="wrapper">
+        <div class="wrapper off">
             <div class="dropDownMenu">Home</div>
             <div class="dropDownMenu">Contact</div>
             <div class="dropDownMenu">Tickets</div>
@@ -225,18 +240,27 @@
         <div class="bottomNav">
             <div>
                 Sign Up for our Newsletter
+                <div>Div for sign up
+                    <button>button</button>
+                </div>
             </div>
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                <li>Contact</li>
+                <li>Maps</li>
+                <li>FAQ</li>
+                <li>Get Around</li>
+                <li>News</li>
             </ul>
         </div>
-        <div>Bottom Nav content
-            <div></div>
-            <div></div>
+        <div>
+            <div class="footerIcons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-snapchat-ghost"></i>
+            </div>
+            <div>Don't forget to follow us on the social media</div>
         </div>
     </footer>
     <script src="../script.js"></script>
