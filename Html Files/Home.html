@@ -42,8 +42,8 @@
 
         .coronaNav {
             background-color:  rgba(255, 234, 100);
+            font-weight: 500;
         }
-
 
         header {
             display: flex;
@@ -101,7 +101,6 @@
         li {
             list-style: none;
             padding-top: 8px;
-            /* padding-bottom: 8px; */
         }
 
         a {
@@ -157,6 +156,39 @@
             display: none;
         }
 
+        .footerText {
+            text-align: center; 
+            font-size: 20px; 
+            padding-bottom: 8px;
+        }
+
+        .signUpArea {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            margin-top: 8px;
+            padding: 8px 0;
+            color: black;
+            font-size: 20px;
+            width: 80%;
+            border-radius: 15px;
+            border: 2px solid rgb(112, 112, 112);
+        }
+
+        .bottomNavWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div button {
+            background-color: rgb(217, 75, 75);
+            color: white;
+            border: 2px solid rgb(112, 112, 112);
+            padding: 0 8px;
+            border-radius: 20px;
+        }
+
         @media (min-width: 1025px) {
             .wrapper {
                 display: none;
@@ -181,7 +213,6 @@
             aside {
                 flex-basis: 150px;
                 background-image: url('../Photos/maps.PNG');
-                /* background-position: center; */
                 background-position-y: 380px;
                 background-position-x: center;
                 border: 2px solid grey;
@@ -226,7 +257,7 @@
             <div class="dropDownMenu">Schedules</div>
             <div class="dropDownMenu"></div>
         </div>
-        <div class="coronaNav">Corona info</div>
+        <div class="coronaNav">Corona info <i class="fas fa-wifi"></i></div>
     </nav>
     <header class="headerImg">
         <div></div>
@@ -238,10 +269,10 @@
 
     <footer>
         <div class="bottomNav">
-            <div>
+            <div class="bottomNavWrapper">
                 Sign Up for our Newsletter
-                <div>Div for sign up
-                    <button>button</button>
+                <div class="signUpArea"> Enter address email
+                    <button>Sign Up!</button>
                 </div>
             </div>
             <ul>
@@ -260,7 +291,7 @@
                 <i class="fab fa-youtube"></i>
                 <i class="fab fa-snapchat-ghost"></i>
             </div>
-            <div>Don't forget to follow us on the social media</div>
+            <div class="footerText">Don't forget to follow us on the social media</div>
         </div>
     </footer>
     <script src="../script.js"></script>
