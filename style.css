@@ -27,7 +27,7 @@ nav {
     color: white;
     flex-basis: 100px;
     align-items: center;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
 }
 
 .offBigUl {
@@ -58,7 +58,7 @@ nav {
     left: 50%;
     font-size: 12px;
     font-style: italic;
-    transform: translate(0, -50%);
+    transform: translate(-17%, -50%);
     overflow: hidden;
 }
 
