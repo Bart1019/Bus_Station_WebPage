@@ -31,8 +31,42 @@ nav {
 }
 
 .coronaNav {
+    position: relative;
     background-color: rgba(255, 234, 100);
     font-weight: 500;
+    padding-left: 10px;
+}
+
+.coronaAnimation {
+    /* border: aqua 2px solid; */
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    font-style: italic;
+    transform: translate(-17%, -50%);
+    overflow: hidden;
+}
+
+.coronaAnimation p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -50%);
+    /* animation: corona 5s linear infinite; */
+}
+
+@keyframes corona {
+    0% {
+        transform: translate(-120%, -50%);
+    }
+
+    100% {
+        transform: translate(51%, -50%);
+    }
 }
 
 header {
@@ -179,6 +213,7 @@ div button {
     padding: 0 8px;
     border-radius: 20px;
 }
+
 
 @media (min-width: 1025px) {
     .wrapper {
