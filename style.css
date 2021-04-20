@@ -27,7 +27,7 @@ nav {
     color: white;
     flex-basis: 100px;
     align-items: center;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
 .offBigUl {
@@ -58,7 +58,7 @@ nav {
     left: 50%;
     font-size: 12px;
     font-style: italic;
-    transform: translate(-17%, -50%);
+    transform: translate(0, -50%);
     overflow: hidden;
 }
 
@@ -67,11 +67,11 @@ nav {
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-120%, -50%);
-    animation: corona 5s linear infinite;
+    transform: translate(-140%, -50%);
     background-color: transparent;
     border: none;
     color: black;
+    animation: corona 5s linear infinite;
 }
 
 header {
@@ -244,7 +244,7 @@ ul i {
 }
 
 ul i {
-    margin-right: 40px;
+    margin-right: 4vw;
     cursor: pointer;
 }
 
@@ -264,11 +264,11 @@ ul i {
     }
 
     section {
-        margin: 0 15vw;
+        margin: 0 calc(100% - 85vw);
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1000px) and (max-width: 1024px) {
     .coronaNav {
         background-color: brown
     }
@@ -288,7 +288,7 @@ ul i {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 999px) {
     section {
         flex-direction: column;
     }
