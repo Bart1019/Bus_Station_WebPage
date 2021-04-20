@@ -123,7 +123,6 @@ main div:nth-child(2) {
 div p {
     display: flex;
     justify-content: center;
-    /* align-content: center; */
     color: white;
     background-color: black;
     border-radius: 20px;
@@ -133,7 +132,7 @@ div p {
 main div:nth-child(3),
 main div:nth-child(4),
 main div:nth-child(5) {
-    width: 30%;
+    min-width: 30%;
     height: 130px;
     border: 2px solid rgb(112, 112, 112);
     border-radius: 20px;
@@ -141,9 +140,15 @@ main div:nth-child(5) {
     margin-bottom: 8px;
 }
 
+
+main div:nth-child(3) {
+    background-color: rgb(198, 221, 239);
+}
+
 aside {
     background-color: cadetblue;
     flex-basis: 30%;
+    min-width: 400px;
 }
 
 .dropDownMenu {
@@ -243,29 +248,43 @@ ul i {
     cursor: pointer;
 }
 
-@keyframes corona {
-    0% {
-        transform: translate(-120%, -50%);
-    }
-
-    100% {
-        transform: translate(51%, -50%);
-    }
-}
-
 @media (min-width: 1025px) {
     .wrapper {
         display: none;
     }
+
+    .coronaNav {
+        background-color: blue;
+    }
+
+    div ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    section {
+        margin: 0 15vw;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    header {
+    .coronaNav {
         background-color: brown
     }
 
     .wrapper {
         display: none;
+    }
+
+    div ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    section {
+        margin: 0 2vw;
     }
 }
 
@@ -294,5 +313,15 @@ ul i {
 
     .offMobileUl {
         display: block;
+    }
+}
+
+@keyframes corona {
+    0% {
+        transform: translate(-120%, -50%);
+    }
+
+    100% {
+        transform: translate(51%, -50%);
     }
 }
