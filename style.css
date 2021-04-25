@@ -171,15 +171,18 @@ select {
 
 .departureInput {
     width: 155px;
+    text-align: right;
 }
 
 .returnInput {
     width: 155px;
+    text-align: right;
 }
 
 .ticketsInput {
     transform: translateY(9.5%);
     width: 112px;
+    text-align: center;
 }
 
 .topHeaderSection div:first-child {
@@ -234,7 +237,9 @@ select {
 
 select {
     width: 195px;
+    text-align-last: center;
 }
+
 
 .bottomHeaderSection button {
     position: absolute;
