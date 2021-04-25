@@ -111,6 +111,10 @@ label {
     font-weight: bold;
 }
 
+.fa-calendar-alt {
+    font-size: 25px;
+}
+
 .fa-map-marker-alt,
 .fa-sync-alt,
 .fa-calendar-alt,
@@ -202,23 +206,23 @@ select {
 
 .middleHeaderSection div:first-child {
     position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(-5%, -50%);
+    top: 52%;
+    left: 6%;
+    transform: translate(-6%, -52%);
 }
 
 .middleHeaderSection div:nth-child(2) {
     position: absolute;
-    top: 50%;
+    top: 52%;
     right: 29.5%;
-    transform: translateY(-50%);
+    transform: translateY(-52%);
 }
 
 .middleHeaderSection div:nth-child(3) {
     position: absolute;
     top: 75%;
-    left: 5%;
-    transform: translate(-5%, -75%);
+    left: 5.5%;
+    transform: translate(-5.5%, -75%);
 }
 
 .middleHeaderSection div:last-child {
@@ -269,7 +273,8 @@ main {
     justify-self: stretch;
     border: 3px solid rgb(112, 112, 112);
     background-color: rgba(232, 228, 228);
-    margin: 8px;
+    margin: 15px;
+    margin-bottom: 0;
     border-radius: 20px;
 }
 
@@ -314,6 +319,7 @@ div p {
     background-color: black;
     border-radius: 20px;
     border: 2px solid black;
+    transform: translateY(-10%);
 }
 
 .weatherTable,
@@ -324,7 +330,7 @@ main div:nth-child(5) {
     border: 2px solid rgb(112, 112, 112);
     border-radius: 20px;
     background-color: rgba(232, 228, 228);
-    margin-bottom: 8px;
+    margin: 15px 0;
 }
 
 .weatherTable {
