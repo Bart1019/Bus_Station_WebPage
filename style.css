@@ -163,10 +163,12 @@ select {
 
 .fromInput {
     width: 310px;
+    padding-left: 25px;
 }
 
 .toInput {
     width: 362px;
+    padding-left: 25px;
 }
 
 .departureInput {
