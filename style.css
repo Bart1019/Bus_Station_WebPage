@@ -103,7 +103,6 @@ header {
     display: flex;
     position: relative;
     width: 100%;
-    border: red 2px solid;
 }
 
 label {
@@ -137,60 +136,100 @@ label {
     cursor: pointer;
 }
 
+.fa-minus {
+    position: absolute;
+    transform: translate(280%, 9.5%);
+}
+
+.fa-plus {
+    transform: translateY(2%);
+}
+
+.fromInput,
+.toInput,
+.departureInput,
+.returnInput,
+.ticketsInput,
+select {
+    position: absolute;
+    transform: translateY(3%);
+    height: 40px;
+    border: none;
+}
+
+.fromInput {
+    width: 310px;
+}
+
+.toInput {
+    width: 362px;
+}
+
+.departureInput {
+    width: 155px;
+}
+
+.returnInput {
+    width: 155px;
+}
+
+.ticketsInput {
+    transform: translateY(9.5%);
+    width: 112px;
+}
+
 .topHeaderSection div:first-child {
     position: absolute;
     /* background-color: aqua; */
     top: 10%;
-    left: 10%;
-    transform: translate(-10%, -10%);
+    left: 5%;
+    transform: translate(-5%, -10%);
 }
 
 .topHeaderSection div:nth-child(2) {
     position: absolute;
-    background-color: rebeccapurple;
-    top: 10%;
+    top: 15%;
     right: 5%;
-    transform: translate(-5%, -10%);
+    transform: translate(-5%, -15%);
 }
 
 .topHeaderSection div:last-child {
     position: absolute;
-    /* background-color: royalblue; */
     top: 30%;
-    left: 10%;
-    transform: translate(-10%, -30%);
+    left: 5%;
+    transform: translate(-5%, -30%);
 }
 
 .middleHeaderSection div:first-child {
     position: absolute;
-    /* background-color: yellow; */
     top: 50%;
-    left: 10%;
-    transform: translate(-10%, -50%);
+    left: 5%;
+    transform: translate(-5%, -50%);
 }
 
 .middleHeaderSection div:nth-child(2) {
     position: absolute;
-    /* background-color: lightpink; */
     top: 50%;
-    right: 0;
+    right: 29.5%;
     transform: translateY(-50%);
 }
 
 .middleHeaderSection div:nth-child(3) {
     position: absolute;
-    /* background-color: olive; */
     top: 75%;
-    left: 10%;
-    transform: translate(-10%, -75%);
+    left: 5%;
+    transform: translate(-5%, -75%);
 }
 
 .middleHeaderSection div:last-child {
     position: absolute;
-    /* background-color: red; */
-    top: 75%;
-    right: 10%;
-    transform: translate(-10%, -75%);
+    top: 67%;
+    right: 23%;
+    transform: translate(-23%, -67%);
+}
+
+select {
+    width: 195px;
 }
 
 .bottomHeaderSection button {
