@@ -107,13 +107,39 @@ header {
 }
 
 label {
-    position: absolute;
-    display: none;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fa-map-marker-alt,
+.fa-sync-alt,
+.fa-calendar-alt,
+.fa-minus,
+.fa-plus {
+    color: white;
+    background-color: rgba(0, 0, 0, .84);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.fa-minus,
+.fa-plus {
+    font-size: 25px;
+}
+
+.fa-sync-alt:hover,
+.fa-plus:hover,
+.fa-minus:hover {
+    background-color: red;
+    cursor: pointer;
 }
 
 .topHeaderSection div:first-child {
     position: absolute;
-    background-color: aqua;
+    /* background-color: aqua; */
     top: 10%;
     left: 10%;
     transform: translate(-10%, -10%);
@@ -129,31 +155,15 @@ label {
 
 .topHeaderSection div:last-child {
     position: absolute;
-    background-color: royalblue;
+    /* background-color: royalblue; */
     top: 30%;
     left: 10%;
     transform: translate(-10%, -30%);
 }
 
-.fa-map-marker-alt {
-    color: white;
-    background-color: rgba(0, 0, 0, .84);
-}
-
-.fa-sync-alt,
-.fa-calendar-alt {
-    color: white;
-    background-color: rgba(0, 0, 0, .84);
-}
-
-.fa-plus,
-.fa-minus {
-    /* background-color: rgba(0, 0, 0, .84); */
-}
-
 .middleHeaderSection div:first-child {
     position: absolute;
-    background-color: yellow;
+    /* background-color: yellow; */
     top: 50%;
     left: 10%;
     transform: translate(-10%, -50%);
@@ -161,7 +171,7 @@ label {
 
 .middleHeaderSection div:nth-child(2) {
     position: absolute;
-    background-color: lightpink;
+    /* background-color: lightpink; */
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -169,18 +179,18 @@ label {
 
 .middleHeaderSection div:nth-child(3) {
     position: absolute;
-    background-color: olive;
-    top: 70%;
+    /* background-color: olive; */
+    top: 75%;
     left: 10%;
-    transform: translate(-10%, -70%);
+    transform: translate(-10%, -75%);
 }
 
 .middleHeaderSection div:last-child {
     position: absolute;
-    background-color: red;
-    top: 70%;
-    right: 0;
-    transform: translateY(-70%);
+    /* background-color: red; */
+    top: 75%;
+    right: 10%;
+    transform: translate(-10%, -75%);
 }
 
 .bottomHeaderSection button {
@@ -191,7 +201,7 @@ label {
     bottom: 4%;
     left: 50%;
     transform: translateX(-50%);
-    height: 50px;
+    height: 40px;
     width: 200px;
     padding: 10px 0;
     font-size: 20px;
