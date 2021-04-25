@@ -34,6 +34,15 @@ nav {
     display: flex;
 }
 
+.dropDownMenu {
+    display: flex;
+    background-color: rgba(0, 0, 0, .84);
+    height: 50px;
+    border-top: 3px solid white;
+    color: white;
+    justify-content: center;
+}
+
 .offMobileUl {
     display: none;
 }
@@ -47,6 +56,7 @@ nav {
     background-color: rgba(255, 234, 100);
     font-weight: 500;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .coronaAnimation {
@@ -60,6 +70,7 @@ nav {
     font-style: italic;
     transform: translate(-17%, -50%);
     overflow: hidden;
+    cursor: pointer;
 }
 
 .coronaAnimation p {
@@ -88,10 +99,103 @@ header {
     opacity: .75;
 }
 
-header div {
+.headerWrapper {
     display: flex;
+    position: relative;
     width: 100%;
     border: red 2px solid;
+}
+
+label {
+    position: absolute;
+    display: none;
+}
+
+.topHeaderSection div:first-child {
+    position: absolute;
+    background-color: aqua;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+}
+
+.topHeaderSection div:nth-child(2) {
+    position: absolute;
+    background-color: rebeccapurple;
+    top: 10%;
+    right: 5%;
+    transform: translate(-5%, -10%);
+}
+
+.topHeaderSection div:last-child {
+    position: absolute;
+    background-color: royalblue;
+    top: 30%;
+    left: 10%;
+    transform: translate(-10%, -30%);
+}
+
+.fa-map-marker-alt {
+    color: white;
+    background-color: rgba(0, 0, 0, .84);
+}
+
+.fa-sync-alt,
+.fa-calendar-alt {
+    color: white;
+    background-color: rgba(0, 0, 0, .84);
+}
+
+.fa-plus,
+.fa-minus {
+    /* background-color: rgba(0, 0, 0, .84); */
+}
+
+.middleHeaderSection div:first-child {
+    position: absolute;
+    background-color: yellow;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+}
+
+.middleHeaderSection div:nth-child(2) {
+    position: absolute;
+    background-color: lightpink;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.middleHeaderSection div:nth-child(3) {
+    position: absolute;
+    background-color: olive;
+    top: 70%;
+    left: 10%;
+    transform: translate(-10%, -70%);
+}
+
+.middleHeaderSection div:last-child {
+    position: absolute;
+    background-color: red;
+    top: 70%;
+    right: 0;
+    transform: translateY(-70%);
+}
+
+.bottomHeaderSection button {
+    position: absolute;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 200px;
+    padding: 10px 0;
+    font-size: 20px;
+    opacity: .84;
 }
 
 section {
@@ -243,15 +347,6 @@ aside {
     background-color: cadetblue;
     flex-basis: 30%;
     min-width: 400px;
-}
-
-.dropDownMenu {
-    display: flex;
-    background-color: rgba(0, 0, 0, .84);
-    height: 50px;
-    border-top: 3px solid white;
-    color: white;
-    justify-content: center;
 }
 
 footer {
