@@ -367,7 +367,13 @@ li {
     padding-top: 8px;
 }
 
-a {
+li a,
+.dropDownMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.topNav a {
     color: white;
     text-decoration: none;
     margin-left: 30px;
