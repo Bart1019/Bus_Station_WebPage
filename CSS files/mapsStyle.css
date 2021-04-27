@@ -92,10 +92,6 @@ header {
     align-items: stretch;
 }
 
-.headerImg {
-    opacity: .75;
-}
-
 .headerWrapper {
     display: flex;
     flex-direction: column;
@@ -135,59 +131,45 @@ main {
     justify-content: space-around;
 }
 
-.question {
-    position: relative;
-    line-height: 100px;
-    padding-left: 50px;
-}
-
-.fa-caret-down {
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    transform: translateY(-50%);
-    font-size: 40px;
-}
-
 main div {
-    flex-basis: 100px;
-    margin-bottom: 15px;
-    background-color: rgba(232, 228, 228);
+    flex-basis: 400px;
     border: 2px solid gray;
-    font-weight: 500;
+    margin: 20px 0;
 }
 
-main div:last-child {
-    margin-bottom: 0;
-    flex-basis: 290px;
+main h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 20px;
 }
 
-div h4 {
-    padding: 2px 10px;
+main h2:first-of-type {
+    margin-top: 20px;
 }
 
-.phoneInput,
-.mailInput {
-    height: 30px;
-    border-radius: 7px;
-    border: 2px solid grey;
-    margin-left: 10px;
+main h2:last-of-type {
     margin-bottom: 20px;
-    padding-left: 20px;
 }
 
-textarea {
-    resize: none;
-    border-radius: 7px;
-    border: 2px solid grey;
-    margin-left: 10px;
-    padding: 10px;
+main div:first-of-type {
+    background-image: url("../Photos/level0.PNG");
+    background-size: cover;
 }
 
-main div button {
-    margin-left: 10px;
-    height: 35px;
-    border-radius: 10px;
+main div:nth-of-type(2) {
+    background-image: url("../Photos/level1.PNG");
+    background-size: cover;
+}
+
+main div:last-of-type {
+    background-image: url("../Photos/level2.PNG");
+    background-size: cover;
+}
+
+aside {
+    background-color: cadetblue;
+    flex-basis: 30%;
+    min-width: 400px;
 }
 
 footer {
@@ -275,7 +257,7 @@ div ul {
     align-items: center;
 }
 
-.topNav a i,
+a i,
 ul i {
     font-size: 40px;
 }
@@ -330,17 +312,17 @@ ul i {
         flex-direction: column;
     }
 
-    /* aside {
+    aside {
         flex-basis: 450px;
-        background-image: url('../Photos/maps.PNG');
+        background-image: url('../Photos/europe.png');
         background-position-y: 380px;
         background-position-x: center;
         border: 2px solid grey;
         margin-bottom: 35px;
-    } */
+    }
 
     header {
-        background-image: url('../Photos/faq.png');
+        background-image: url('../Photos/blueprints.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: right;
