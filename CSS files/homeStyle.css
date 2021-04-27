@@ -142,7 +142,8 @@ label {
 
 .fa-minus {
     position: absolute;
-    transform: translate(280%, 9.5%);
+    transform: translateY(9%);
+    left: 33.5vw;
 }
 
 .fa-plus {
@@ -162,44 +163,48 @@ select {
 }
 
 .fromInput {
-    width: 310px;
+    width: 67vw;
     padding-left: 25px;
 }
 
 .toInput {
-    width: 362px;
+    width: 78.5vw;
     padding-left: 25px;
 }
 
 .departureInput {
-    width: 155px;
+    width: 34vw;
     text-align: right;
 }
 
 .returnInput {
-    width: 155px;
+    width: 33vw;
     text-align: right;
 }
 
 .ticketsInput {
     transform: translateY(9.5%);
-    width: 112px;
+    width: 25vw;
     text-align: center;
+}
+
+select {
+    width: 42.5vw;
+    text-align-last: center;
 }
 
 .topHeaderSection div:first-child {
     position: absolute;
-    /* background-color: aqua; */
     top: 10%;
-    left: 5%;
+    left: 5vw;
     transform: translate(-5%, -10%);
 }
 
 .topHeaderSection div:nth-child(2) {
     position: absolute;
     top: 15%;
-    right: 5%;
-    transform: translate(-5%, -15%);
+    left: 85.5%;
+    transform: translateY(-15%);
 }
 
 .topHeaderSection div:last-child {
@@ -218,9 +223,9 @@ select {
 
 .middleHeaderSection div:nth-child(2) {
     position: absolute;
-    top: 52%;
-    right: 29.5%;
-    transform: translateY(-52%);
+    top: 51.5%;
+    left: 52%;
+    transform: translateY(-51.5%);
 }
 
 .middleHeaderSection div:nth-child(3) {
@@ -233,15 +238,9 @@ select {
 .middleHeaderSection div:last-child {
     position: absolute;
     top: 67%;
-    right: 23%;
-    transform: translate(-23%, -67%);
+    left: 52%;
+    transform: translateY(-67%);
 }
-
-select {
-    width: 195px;
-    text-align-last: center;
-}
-
 
 .bottomHeaderSection button {
     position: absolute;
@@ -346,6 +345,7 @@ main div:nth-child(5) {
     justify-content: space-evenly;
     background-color: rgb(198, 221, 239);
     padding-left: 5px;
+    text-align: center;
 }
 
 .fa-sun::after {
