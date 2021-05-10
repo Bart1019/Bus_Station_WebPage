@@ -1,0 +1,448 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150vh;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: lightslategray;
+    align-self: stretch;
+}
+
+.topNav {
+    display: flex;
+    background-color: rgba(0, 0, 0, .84);
+    color: white;
+    flex-basis: 100px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.offBigUl {
+    display: flex;
+}
+
+.dropDownMenu {
+    display: flex;
+    background-color: rgba(0, 0, 0, .84);
+    height: 50px;
+    border-top: 3px solid white;
+    color: white;
+    justify-content: center;
+}
+
+.offMobileUl {
+    display: none;
+}
+
+.off {
+    display: none;
+}
+
+.coronaNav {
+    position: relative;
+    background-color: rgba(255, 234, 100);
+    font-weight: 500;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.coronaAnimation {
+    /* border: aqua 2px solid; */
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    font-style: italic;
+    transform: translate(-17%, -50%);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.coronaAnimation p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-140%, -50%);
+    background-color: transparent;
+    border: none;
+    color: black;
+    animation: corona 5s linear infinite;
+}
+
+header {
+    display: flex;
+    align-self: stretch;
+    flex-basis: 400px;
+    align-items: stretch;
+    background-image: url('../Photos/vlc.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.headerWrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fa-calendar-alt {
+    font-size: 25px;
+}
+
+.fa-map-marker-alt,
+.fa-sync-alt,
+.fa-calendar-alt,
+.fa-minus,
+.fa-plus {
+    color: white;
+    background-color: rgba(0, 0, 0, .84);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.fa-minus,
+.fa-plus {
+    font-size: 25px;
+}
+
+.fa-sync-alt:hover,
+.fa-plus:hover,
+.fa-minus:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.fa-minus {
+    position: absolute;
+    transform: translateY(9%);
+    left: 33.5vw;
+}
+
+.fa-plus {
+    transform: translateY(2%);
+}
+
+.fromInput,
+.toInput,
+.departureInput,
+.returnInput,
+.ticketsInput,
+select {
+    position: absolute;
+    transform: translateY(3%);
+    height: 40px;
+    border: none;
+}
+
+.fromInput {
+    width: 67vw;
+    padding-left: 25px;
+}
+
+.toInput {
+    width: 78.5vw;
+    padding-left: 25px;
+}
+
+.departureInput {
+    width: 34vw;
+    text-align: right;
+}
+
+.returnInput {
+    width: 33vw;
+    text-align: right;
+}
+
+.ticketsInput {
+    transform: translateY(9.5%);
+    width: 25vw;
+    text-align: center;
+}
+
+select {
+    width: 42.5vw;
+    text-align-last: center;
+}
+
+.topHeaderSection div:first-child {
+    position: absolute;
+    top: 6%;
+    left: 5vw;
+    transform: translate(-5%, -10%);
+}
+
+.topHeaderSection div:nth-child(2) {
+    position: absolute;
+    top: 11%;
+    left: 85.5%;
+    transform: translateY(-15%);
+}
+
+.topHeaderSection div:last-child {
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    transform: translate(-5%, -30%);
+}
+
+.middleHeaderSection div:first-child {
+    position: absolute;
+    top: 52%;
+    left: 6%;
+    transform: translate(-6%, -52%);
+}
+
+.middleHeaderSection div:nth-child(2) {
+    position: absolute;
+    top: 51.5%;
+    left: 52%;
+    transform: translateY(-51.5%);
+}
+
+.middleHeaderSection div:nth-child(3) {
+    position: absolute;
+    top: 75%;
+    left: 5.5%;
+    transform: translate(-5.5%, -75%);
+}
+
+.middleHeaderSection div:last-child {
+    position: absolute;
+    top: 67%;
+    left: 52%;
+    transform: translateY(-67%);
+}
+
+.bottomHeaderSection button {
+    position: absolute;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 200px;
+    padding: 10px 0;
+    font-size: 20px;
+    opacity: .84;
+}
+
+section {
+    display: flex;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+main div {
+    display: flex;
+    flex-basis: 400px;
+    background-color: rgba(232, 228, 228);
+    border: 2px solid gray;
+}
+
+footer {
+    background-color: rgba(232, 228, 228);
+    align-self: stretch;
+    flex-basis: 200px;
+    color: black;
+}
+
+.bottomNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .84);
+    color: white;
+    padding: 8px 0;
+}
+
+.bottomNavWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUpArea {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 8px;
+    padding: 8px 0;
+    color: black;
+    font-size: 20px;
+    width: 80%;
+    border-radius: 15px;
+    border: 2px solid rgb(112, 112, 112);
+}
+
+div button {
+    background-color: rgb(217, 75, 75);
+    color: white;
+    border: 2px solid rgb(112, 112, 112);
+    padding: 0 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.footerText {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding-top: 8px;
+}
+
+li a,
+.dropDownMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.topNav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a i,
+ul i {
+    font-size: 40px;
+}
+
+ul i {
+    margin-right: 4vw;
+    cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+    .wrapper {
+        display: none;
+    }
+
+    .coronaNav {
+        background-color: blue;
+    }
+
+    div ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    section {
+        margin: 0 calc(100% - 85vw);
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1024px) {
+    .coronaNav {
+        background-color: brown
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    div ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    section {
+        margin: 0 2vw;
+    }
+}
+
+@media (max-width: 999px) {
+    section {
+        flex-direction: column;
+    }
+
+    aside {
+        flex-basis: 450px;
+        background-image: url('../Photos/maps.PNG');
+        background-position-y: 380px;
+        background-position-x: center;
+        border: 2px solid grey;
+        margin-bottom: 35px;
+    }
+
+    header {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .offBigUl {
+        display: none;
+    }
+
+    .offMobileUl {
+        display: block;
+    }
+}
+
+@keyframes corona {
+    0% {
+        transform: translate(-120%, -50%);
+    }
+
+    100% {
+        transform: translate(51%, -50%);
+    }
+}
