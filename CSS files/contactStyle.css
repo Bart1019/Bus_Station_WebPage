@@ -132,15 +132,15 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
-    /* justify-content: space-around; */
+    justify-content: space-around;
 }
 
 main div {
     flex-basis: 400px;
     background-color: rgba(232, 228, 228);
     border: 2px solid gray;
-    font-weight: 500;
 }
+
 
 main div:last-child {
     margin-bottom: 0;
