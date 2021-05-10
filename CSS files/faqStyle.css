@@ -158,8 +158,26 @@ main div {
 }
 
 main div:last-child {
-    margin-bottom: 0;
+    display: flex;
     flex-basis: 290px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+main div:last-child input {
+    width: 46.5%;
+    flex-wrap: nowrap;
+}
+
+main div:last-child textarea {
+    width: 95%;
+}
+
+main div:last-child button {
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 20px 0 10px 10px;
 }
 
 div h4 {
@@ -168,11 +186,10 @@ div h4 {
 
 .phoneInput,
 .mailInput {
-    height: 30px;
+    height: 40px;
     border-radius: 7px;
     border: 2px solid grey;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    margin: 5px 0 10px 10px;
     padding-left: 20px;
 }
 

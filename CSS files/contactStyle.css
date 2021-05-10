@@ -136,15 +136,138 @@ main {
 }
 
 main div {
+    display: flex;
     flex-basis: 400px;
     background-color: rgba(232, 228, 228);
     border: 2px solid gray;
 }
 
+.callArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 200px;
+    padding-left: 20px;
+}
+
+p span {
+    color: rgb(217, 75, 75);
+}
+
+.callArea p:first-of-type,
+.passengerInfoArea p:first-of-type {
+    font-weight: 500;
+}
+
+.fa-info,
+.fa-headset,
+.fa-user-tie {
+    font-size: 50px;
+}
+
+.passengerInfoArea,
+.dispatcherArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+
+.passengerInfoArea p:nth-of-type(4),
+.passengerInfoArea p:last-of-type,
+.dispatcherArea p:last-of-type {
+    font-size: 25px;
+}
+
+.passengerInfoArea p:nth-of-type(4) i,
+.passengerInfoArea p:last-of-type i,
+.dispatcherArea p:last-of-type i {
+    font-size: 35px;
+    padding-right: 10px;
+}
+
+/* .callArea i,
+.passengerInfoArea i,
+.dispatcherArea i {
+    font-size: 40px;
+    margin: 20px 0 0 20px;
+}
+
+.callArea i:first-child,
+.passengerInfoArea i:first-child,
+.dispatcherArea i:first-child {
+    font-size: 100px;
+    margin: 20px 0 20px 20px;
+}
+
+.fa-phone-alt,
+.fa-mobile-alt,
+.fa-clock,
+.fa-envelope {
+    width: 50%;
+}
+
+.fa-phone-alt::after,
+.fa-mobile-alt::after {
+    content: "xxx-xxx-xxx";
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.fa-envelope::after {
+    content: "abcde@fghij.klmn";
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.dispatcherArea .fa-clock::after {
+    content: "Working hours(10:00-16:00)";
+    font-weight: normal;
+    font-size: 20px;
+    width: 100%;
+}
+
+main p {
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+p span {
+    color: rgb(217, 75, 75);
+}
+
+.callArea,
+.passengerInfoArea p,
+.dispatcherArea p {
+    font-size: 20px;
+}
+
+.callArea p:first-child,
+.passengerInfoArea p:first-child,
+.dispatcherArea p:first-child {
+    font-size: 200px;
+} */
 
 main div:last-child {
-    margin-bottom: 0;
+    display: flex;
     flex-basis: 290px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+main div:last-child input {
+    width: 46.5%;
+}
+
+main div:last-child textarea {
+    width: 95%;
+}
+
+main div:last-child button {
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 20px 0 10px 10px;
 }
 
 div h4 {
@@ -153,11 +276,10 @@ div h4 {
 
 .phoneInput,
 .mailInput {
-    height: 30px;
+    height: 40px;
     border-radius: 7px;
     border: 2px solid grey;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    margin: 5px 0 10px 10px;
     padding-left: 20px;
 }
 
@@ -167,12 +289,6 @@ textarea {
     border: 2px solid grey;
     margin-left: 10px;
     padding: 10px;
-}
-
-main div button {
-    margin-left: 10px;
-    height: 35px;
-    border-radius: 10px;
 }
 
 footer {
