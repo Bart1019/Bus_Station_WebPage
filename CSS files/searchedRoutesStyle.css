@@ -267,11 +267,179 @@ main {
     justify-content: space-around;
 }
 
-main div {
+.searchOutcome {
     display: flex;
-    flex-basis: 400px;
+    position: relative;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-basis: 250px;
+    background-color: white;
+}
+
+.searchOutcome:nth-of-type(2),
+.searchOutcome:nth-of-type(3),
+.searchOutcome:nth-of-type(4) {
+    margin-top: 10px;
+}
+
+.searchOutcome:last-of-type {
+    margin-bottom: 20px;
+}
+
+.fromTo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 20px;
+    height: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.fromTo p:first-of-type {
+    font-weight: 500;
+}
+
+.fromTo p:nth-of-type(3) {
+    font-weight: 900;
+    padding-left: 15px;
+}
+
+.fromTo p:nth-of-type(4) {
+    transform: translateX(-20px);
+}
+
+.fromTo p:nth-of-type(5) {
+    font-style: italic;
+}
+
+.fromTo p:last-of-type {
+    transform: translateX(15px);
+    font-style: italic;
+}
+
+.fromTo p:first-of-type,
+.fromTo p:nth-of-type(2),
+.fromTo p:nth-of-type(3),
+.fromTo p:nth-of-type(4) {
+    font-size: 25px;
+}
+
+.fromTo p:nth-of-type(2),
+.fromTo p:nth-of-type(3),
+.fromTo p:nth-of-type(4) {
+    width: 33%;
+}
+
+.fromTo p:nth-of-type(5),
+.fromTo p:nth-of-type(6) {
+    width: 50%;
+}
+
+.travelTime p {
+    font-size: 25px;
+}
+
+.travelTime p:first-of-type {
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.travelTime {
+    width: 50%;
+    height: 150px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.busAnimation {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.busAnimation .stripe {
+    align-self: center;
+}
+
+.busAnimation .circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.busAnimation .circle:first-of-type {
+    top: 50%;
+    left: 2%;
+    transform: translate(-2%, -50%);
+}
+
+.busAnimation .circle:nth-of-type(2) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
     background-color: rgba(232, 228, 228);
-    border: 2px solid gray;
+    background-image: url("../Photos/busSide.svg");
+    border: 2px solid black;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* .busAnimation .stripe:hover+.circle:first-of-type {
+    background-color: green;
+} */
+
+.busAnimation .stripe:hover+.circle:nth-of-type(2) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    left: 95%;
+    top: 50%;
+    transform: translate(-95%, -50%);
+    transition: 1s;
+}
+
+.busAnimation .circle:last-of-type {
+    top: 50%;
+    left: 98%;
+    transform: translate(-98%, -50%);
+}
+
+.buyStripe {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(232, 228, 228);
+    margin-bottom: 20px;
+}
+
+.searchOutcome div button {
+    width: 150px;
+    height: 55px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 18px 0 10px 10px;
+    transform: translate(-20%, -8%);
+}
+
+.stripe {
+    position: absolute;
+    width: 94%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 footer {

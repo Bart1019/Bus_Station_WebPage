@@ -135,7 +135,9 @@ main {
     justify-content: space-around;
 }
 
-main div {
+.passengerInfoArea,
+.callArea,
+.dispatcherArea {
     display: flex;
     flex-basis: 400px;
     background-color: rgba(232, 228, 228);
@@ -185,68 +187,6 @@ p span {
     font-size: 35px;
     padding-right: 10px;
 }
-
-/* .callArea i,
-.passengerInfoArea i,
-.dispatcherArea i {
-    font-size: 40px;
-    margin: 20px 0 0 20px;
-}
-
-.callArea i:first-child,
-.passengerInfoArea i:first-child,
-.dispatcherArea i:first-child {
-    font-size: 100px;
-    margin: 20px 0 20px 20px;
-}
-
-.fa-phone-alt,
-.fa-mobile-alt,
-.fa-clock,
-.fa-envelope {
-    width: 50%;
-}
-
-.fa-phone-alt::after,
-.fa-mobile-alt::after {
-    content: "xxx-xxx-xxx";
-    font-weight: normal;
-    font-size: 20px;
-}
-
-.fa-envelope::after {
-    content: "abcde@fghij.klmn";
-    font-weight: normal;
-    font-size: 20px;
-}
-
-.dispatcherArea .fa-clock::after {
-    content: "Working hours(10:00-16:00)";
-    font-weight: normal;
-    font-size: 20px;
-    width: 100%;
-}
-
-main p {
-    font-weight: 500;
-    margin: 0 20px;
-}
-
-p span {
-    color: rgb(217, 75, 75);
-}
-
-.callArea,
-.passengerInfoArea p,
-.dispatcherArea p {
-    font-size: 20px;
-}
-
-.callArea p:first-child,
-.passengerInfoArea p:first-child,
-.dispatcherArea p:first-child {
-    font-size: 200px;
-} */
 
 main div:last-child {
     display: flex;
