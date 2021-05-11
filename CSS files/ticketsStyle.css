@@ -251,6 +251,11 @@ select {
     opacity: .84;
 }
 
+.bottomHeaderSection button a {
+    text-decoration: none;
+    color: white;
+}
+
 section {
     display: flex;
     flex-grow: 1;
