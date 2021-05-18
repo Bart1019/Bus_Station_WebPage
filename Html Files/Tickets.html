@@ -11,13 +11,19 @@
 <body>
     <nav>
         <div class="topNav">
-            <a href="../Html Files/Home.html">Valencia <i class="fas fa-bus-alt"></i> Bus Station</a>
+            <a class="busLogo" href="../Html Files/Home.html">Valencia <i class="fas fa-bus-alt"></i> Bus Station</a>
             <ul class="offBigUl">
                 <li><a href="../Html Files/Home.html">Home</a></li>
                 <li><a href="../Html Files/Contact.html">Contact</a></li>
                 <li><a href="../Html Files/Tickets.html">Tickets</a></li>
                 <li><a href="../Html Files/Schedules.html">Schedules</a></li>
-                <li>Flags</li>
+                <li>
+                    <div class="flagsWrapper">
+                        <div class="flags"></div>
+                        <div class="flags"></div>
+                        <div class="flags"></div>
+                    </div> 
+                </li>
             </ul>
             <ul class="offMobileUl">
                 <i class="fas fa-bars"></i>
@@ -34,8 +40,8 @@
                 <div class="flags"></div>
             </div>
         </div>
-        <div class="coronaNav">Covid-19
-            <i class="fas fa-wifi"></i>
+        <div class="coronaNav">
+            <p style="font-size: 30px;">Covid-19 <i class="fas fa-wifi"></i></p>
             <div class="coronaAnimation">
                 <p>Check current epidemic situations</p> 
             </div>
@@ -110,12 +116,14 @@
     <footer>
         <div class="bottomNav">
             <div class="bottomNavWrapper">
-                Sign Up for our Newsletter
+                <p>Sign Up for our Newsletter</p>
+                <div class="bottomLine"></div>
                 <div class="signUpArea"> Enter address email
                     <button>Sign Up!</button>
                 </div>
+                <div class="bottomLine"></div>
             </div>
-            <ul>
+            <ul class="menuItems">
                 <li><a href="../Html Files/Contact.html">Contact</a></li>
                 <li><a href="../Html Files/Maps.html">Maps</a></li>
                 <li><a href="../Html Files/FAQ.html">FAQ</a></li>
@@ -124,6 +132,7 @@
             </ul>
         </div>
         <div>
+            <p class="footerMessage">Join the newsletter for being update!</p>
             <div class="footerIcons">
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-twitter"></i>
@@ -131,7 +140,7 @@
                 <i class="fab fa-youtube"></i>
                 <i class="fab fa-snapchat-ghost"></i>
             </div>
-            <div class="footerText">Don't forget to follow us on the social media</div>
+            <p class="footerText">Don't forget to follow us on the social media</p>
         </div>
     </footer>
     <script src="../script.js"></script>
