@@ -41,6 +41,31 @@ nav {
     border-top: 3px solid white;
     color: white;
     justify-content: center;
+    align-items: center;
+}
+
+.dropDownMenu .flags {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin-left: 10px;
+    transform: translateX(-8px);
+    cursor: pointer;
+}
+
+.dropDownMenu .flags:first-of-type {
+    background-image: url("../Photos/spain.png");
+    background-size: contain;
+}
+
+.dropDownMenu .flags:nth-of-type(2) {
+    background-image: url("../Photos/united-kingdom.png");
+    background-size: contain;
+}
+
+.dropDownMenu .flags:last-of-type {
+    background-image: url("../Photos/germany.png");
+    background-size: contain;
 }
 
 .offMobileUl {
@@ -396,12 +421,6 @@ main {
     cursor: pointer;
     z-index: 1;
 }
-
-/* .busAnimation .circle:nth-of-type(2):hover {
-    left: 95%;
-    transform: translate(-95%, -50%);
-    transition: 1s;
-} */
 
 .busAnimation .circle:last-of-type {
     top: 50%;
