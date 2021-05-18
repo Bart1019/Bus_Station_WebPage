@@ -30,6 +30,18 @@ nav {
     justify-content: flex-end;
 }
 
+.topNav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.topNav a i,
+ul i {
+    font-size: 40px;
+}
+
 .offBigUl {
     display: flex;
 }
@@ -68,12 +80,23 @@ nav {
     background-size: contain;
 }
 
+li a,
+.dropDownMenu a {
+    text-decoration: none;
+    color: white;
+}
+
 .offMobileUl {
     display: none;
 }
 
 .off {
     display: none;
+}
+
+.offMobileUl i {
+    margin-right: 4vw;
+    cursor: pointer;
 }
 
 .coronaNav {
@@ -262,36 +285,49 @@ li {
     padding-top: 8px;
 }
 
-li a,
-.dropDownMenu a {
-    text-decoration: none;
-    color: white;
-}
-
-.topNav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 30px;
-    margin-right: auto;
-}
-
-div ul {
+.bottomNav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.topNav a i,
-ul i {
-    font-size: 40px;
-}
+@media (min-width: 1200px) {
 
-ul i {
-    margin-right: 4vw;
-    cursor: pointer;
-}
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+    }
 
-@media (min-width: 1025px) {
+    .topNav {
+        display: flex;
+        background-color: rgba(0, 0, 0, .84);
+        color: white;
+        flex-basis: 100px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .topNav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .topNav .busLogo {
+        position: absolute;
+        right: 65vw;
+    }
+
+    .topNav a i,
+    ul i {
+        font-size: 40px;
+    }
+
+    .offBigUl {
+        display: flex;
+        margin-right: 10vw;
+    }
 
     header {
         background-image: url('../Photos/taxi.jpg');
@@ -321,46 +357,111 @@ ul i {
         align-items: center;
     }
 
-    .offBigUl .circle {
-        width: 30px;
-        height: 30px;
+    .flagsWrapper {
+        display: flex;
+        flex-direction: row;
+        margin-left: 15px;
+    }
+
+    .flagsWrapper .flags {
+        width: 35px;
+        height: 35px;
         border-radius: 50px;
-        background-color: aqua;
         background-size: contain;
+        margin-left: 5px;
+    }
+
+    .flagsWrapper .flags:first-of-type {
         background-image: url("../Photos/spain.png");
+    }
+
+    .flagsWrapper .flags:nth-of-type(2) {
+        background-image: url("../Photos/united-kingdom.png");
+
+    }
+
+    .flagsWrapper .flags:last-of-type {
+        background-image: url("../Photos/germany.png");
     }
 
     section {
         margin: 0 calc(100% - 85vw);
     }
 
-    /* ul i {
-        margin-right: 4vw;
-        cursor: pointer;
-    } */
-}
-
-@media (min-width: 901px) and (max-width: 1024px) {
-    .coronaNav {
-        background-color: brown
+    footer {
+        background-color: rgba(232, 228, 228);
+        align-self: stretch;
+        flex-basis: 200px;
+        color: black;
     }
 
-    .wrapper {
-        display: none;
-    }
-
-    div ul {
+    .bottomNav {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .84);
+        color: white;
+        padding: 8px 0;
+    }
+
+    .bottomNavWrapper {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
-    section {
-        margin: 0 2vw;
+    .signUpArea {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        margin-top: 8px;
+        padding: 8px 0;
+        color: black;
+        font-size: 20px;
+        width: 80%;
+        border-radius: 15px;
+        border: 2px solid rgb(112, 112, 112);
+    }
+
+    div button {
+        background-color: rgb(217, 75, 75);
+        color: white;
+        border: 2px solid rgb(112, 112, 112);
+        padding: 0 8px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .footerIcons {
+        display: flex;
+        justify-content: space-around;
+        padding: 8px 0;
+        cursor: pointer;
+    }
+
+    .footerText {
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        padding-top: 8px;
+    }
+
+    .bottomNav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1199px) {
     section {
         flex-direction: column;
     }
