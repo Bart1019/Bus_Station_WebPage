@@ -90,13 +90,13 @@ li a,
     display: none;
 }
 
-.off {
-    display: none;
-}
-
 .offMobileUl i {
     margin-right: 4vw;
     cursor: pointer;
+}
+
+.off {
+    display: none;
 }
 
 .coronaNav {
@@ -239,6 +239,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.bottomNavWrapper p {
+    font-size: 30px;
 }
 
 .signUpArea {
@@ -391,13 +395,14 @@ li {
     footer {
         background-color: rgba(232, 228, 228);
         align-self: stretch;
-        flex-basis: 200px;
+        flex-basis: 190px;
         color: black;
     }
 
     .bottomNav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
         background-color: rgba(0, 0, 0, .84);
         color: white;
@@ -405,12 +410,41 @@ li {
     }
 
     .bottomNavWrapper {
+        position: relative;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        /* border: 2px solid red; */
+    }
+
+    .bottomNavWrapper .bottomLine {
+        position: absolute;
+        height: 62px;
+        width: 3px;
+        background-color: rgba(232, 228, 228);
+        border-radius: 20px;
+        transform: translate(20vw, -6px);
+    }
+
+    .bottomNav .bottomLine:last-of-type {
+        position: absolute;
+        height: 120px;
+        width: 3px;
+        background-color: rgba(0, 0, 0, .84);
+        border-radius: 20px;
+        transform: translate(20vw, 59px);
+    }
+
+    .menuItems {
+        transform: translateY(-7px);
+        /* border: 2px solid red; */
+    }
+
+    .menuItems li {
+        margin-left: 40px;
     }
 
     .signUpArea {
+        position: absolute;
         display: flex;
         justify-content: space-around;
         background-color: white;
@@ -418,9 +452,10 @@ li {
         padding: 8px 0;
         color: black;
         font-size: 20px;
-        width: 80%;
+        width: 300px;
         border-radius: 15px;
         border: 2px solid rgb(112, 112, 112);
+        transform: translate(25%, 70px);
     }
 
     div button {
@@ -433,31 +468,39 @@ li {
     }
 
     .footerIcons {
+        position: absolute;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        width: 500px;
         padding: 8px 0;
         cursor: pointer;
+        transform: translate(54vw, 20px);
+    }
+
+    .footerMessage {
+        font-style: italic;
+        position: absolute;
+        transform: translate(20.5vw, 83px);
     }
 
     .footerText {
         text-align: center;
-        font-size: 20px;
+        font-size: 16px;
         padding-bottom: 8px;
-    }
-
-    ul {
-        display: flex;
-    }
-
-    li {
-        list-style: none;
-        padding-top: 8px;
+        font-style: italic;
+        position: absolute;
+        transform: translate(60vw, 83px);
     }
 
     .bottomNav ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+    }
+
+    .bottomNav p {
+        font-size: 30px;
+        transform: translateX(50px);
     }
 }
 
@@ -488,6 +531,10 @@ li {
 
     .offMobileUl {
         display: block;
+    }
+
+    .footerMessage {
+        display: none;
     }
 }
 
