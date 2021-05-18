@@ -267,26 +267,55 @@ ul i {
 }
 
 @media (min-width: 1025px) {
-    .wrapper {
-        display: none;
+
+    header {
+        background-image: url('../Photos/taxi.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
     }
 
-    .coronaNav {
-        background-color: blue;
+    .headerWrapper {
+        padding-left: 10%;
     }
 
-    div ul {
+    .coronaNav p:first-of-type {
+        /* font-size: 30px; */
+        transform: translateY(4px);
+        padding-left: 20%;
+    }
+
+    .coronaAnimation p {
+        animation-duration: 10s;
+    }
+
+    .topNav .offBigUl {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
 
+    .offBigUl .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: aqua;
+        background-size: contain;
+        background-image: url("../Photos/spain.png");
+    }
+
     section {
         margin: 0 calc(100% - 85vw);
     }
+
+    /* ul i {
+        margin-right: 4vw;
+        cursor: pointer;
+    } */
 }
 
-@media (min-width: 1000px) and (max-width: 1024px) {
+@media (min-width: 901px) and (max-width: 1024px) {
     .coronaNav {
         background-color: brown
     }
@@ -306,7 +335,7 @@ ul i {
     }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 900px) {
     section {
         flex-direction: column;
     }

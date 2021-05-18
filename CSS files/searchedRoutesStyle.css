@@ -391,17 +391,17 @@ main {
     background-image: url("../Photos/busSide.svg");
     border: 2px solid black;
     top: 50%;
-    left: 5%;
-    transform: translate(-5%, -50%);
+    left: 15%;
+    transform: translate(-15%, -50%);
     cursor: pointer;
     z-index: 1;
 }
 
-.busAnimation .circle:nth-of-type(2):hover {
+/* .busAnimation .circle:nth-of-type(2):hover {
     left: 95%;
     transform: translate(-95%, -50%);
     transition: 1s;
-}
+} */
 
 .busAnimation .circle:last-of-type {
     top: 50%;
