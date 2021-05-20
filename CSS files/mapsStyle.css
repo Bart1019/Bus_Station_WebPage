@@ -103,6 +103,71 @@ aside {
     header {
         background-image: url('../Photos/blueprints.jpg');
     }
+
+    main {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    main div {
+        flex-basis: 400px;
+        border: 2px solid gray;
+        margin: 20px 0;
+        width: 95%;
+    }
+
+    main h2 {
+        font-size: 35px;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
+    main h2:first-of-type {
+        margin-top: 20px;
+    }
+
+    main h2:first-of-type {
+        margin-left: 0;
+    }
+
+    main div:first-of-type {
+        background-image: url("../Photos/level0.PNG");
+        background-size: cover;
+    }
+
+    main div:nth-of-type(2) {
+        background-image: url("../Photos/level1.PNG");
+        background-size: cover;
+    }
+
+    main div:last-of-type {
+        background-image: url("../Photos/level2.PNG");
+        background-size: cover;
+    }
+
+
+    main h2:last-of-type {
+        position: absolute;
+        top: 1.5%;
+        left: 260%;
+        transform: translate(-260%, 0);
+        width: 500px;
+    }
+
+    aside {
+        background-color: cadetblue;
+        flex-basis: 40%;
+        min-width: 400px;
+        background-image: url("../Photos/europe.png");
+        height: 1280px;
+        margin-top: 87px;
+        border: 2px solid gray;
+        background-position-x: center;
+    }
 }
 
 @media (max-width: 1199px) {
