@@ -103,6 +103,50 @@ main div {
     header {
         background-image: url('../Photos/taxi.jpg');
     }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    main div {
+        margin: 10px 0;
+    }
+
+    main div:first-of-type {
+        margin-top: 10px;
+    }
+
+    main div:last-of-type {
+        margin-bottom: 15px;
+    }
+
+    img {
+        background-color: white;
+        width: 100%;
+    }
+
+    div h2 {
+        padding-left: 8px;
+        font-weight: 600;
+    }
+
+    div p {
+        font-size: 15px;
+        padding: 0 20px 10px 10px;
+        text-align: justify;
+    }
+
+    main div {
+        flex-basis: 30%;
+        margin-bottom: 15px;
+        background-color: rgba(232, 228, 228);
+        border: 2px solid gray;
+        font-weight: 500;
+    }
 }
 
 @media (max-width: 1199px) {

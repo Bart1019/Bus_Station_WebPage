@@ -257,4 +257,8 @@ main div button {
         background-repeat: no-repeat;
         background-position-x: right;
     }
+
+    .break {
+        display: none;
+    }
 }
