@@ -115,22 +115,24 @@ p span {
     padding-right: 10px;
 }
 
-main div:last-child {
+main div:nth-child(4) {
     display: flex;
     flex-basis: 290px;
     flex-wrap: wrap;
     margin-bottom: 0;
+    background-color: rgba(232, 228, 228);
+    border: 2px solid gray;
 }
 
-main div:last-child input {
+main div:nth-child(4) input {
     width: 46.5%;
 }
 
-main div:last-child textarea {
+main div:nth-child(4) textarea {
     width: 95%;
 }
 
-main div:last-child button {
+main div:nth-child(4) button {
     width: 130px;
     height: 35px;
     border-radius: 10px;
@@ -163,6 +165,143 @@ textarea {
     header {
         background-image: url('../Photos/contactUs.jpg');
     }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    .passengerInfoArea,
+    .callArea,
+    .dispatcherArea {
+        display: flex;
+        flex-basis: 330px;
+        background-color: rgba(232, 228, 228);
+        border: 2px solid gray;
+        flex-grow: 1;
+        margin: 20px 10px;
+    }
+
+    .callArea {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 30px;
+    }
+
+    .callArea p,
+    .passengerInfoArea p,
+    .dispatcherArea p {
+        padding-top: 30px;
+    }
+
+    .passengerInfoArea p:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .callArea p span {
+        color: rgb(217, 75, 75);
+    }
+
+    .callArea p:first-of-type,
+    .passengerInfoArea p:first-of-type,
+    .dispatcherArea p:first-of-type {
+        font-weight: 500;
+    }
+
+    .fa-info,
+    .fa-headset,
+    .fa-user-tie {
+        font-size: 50px;
+    }
+
+    .passengerInfoArea,
+    .dispatcherArea {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    .passengerInfoArea p:nth-of-type(4),
+    .passengerInfoArea p:last-of-type,
+    .dispatcherArea p:last-of-type {
+        font-size: 25px;
+    }
+
+    .passengerInfoArea p:nth-of-type(4) i,
+    .passengerInfoArea p:last-of-type i,
+    .dispatcherArea p:last-of-type i {
+        font-size: 35px;
+        padding-right: 10px;
+    }
+
+    main div:nth-child(4) {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 48.5%;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        background-color: rgba(232, 228, 228);
+        border: 2px solid gray;
+    }
+
+    main div:last-child {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 48.5%;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        height: 450px;
+        border: 2px solid gray;
+        background-image: url("../Photos/maps.PNG");
+    }
+
+    main div:nth-child(4) input {
+        width: 46.5%;
+        margin-top: 10px;
+    }
+
+    main div:nth-child(4) textarea {
+        width: 95%;
+    }
+
+    main div:nth-child(4) button {
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        margin: 25px 0 5px 80px;
+    }
+
+    .messageArea textarea {
+        resize: none;
+        border-radius: 7px;
+        border: 2px solid grey;
+        justify-self: center;
+        flex-basis: 72%;
+        margin-left: 80px;
+    }
+
+    .messageArea h4 {
+        flex-basis: 100%;
+        padding: 10px 80px;
+    }
+
+    .nameInput,
+    .surnameInput,
+    .phoneInput,
+    .mailInput {
+        height: 40px;
+        border-radius: 7px;
+        border: 2px solid grey;
+        margin: -30px 0 10px 80px;
+        padding-left: 20px;
+        flex-basis: 30%;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -180,6 +319,15 @@ textarea {
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: center;
+    }
+
+    .nameInput,
+    .surnameInput {
+        display: none;
+    }
+
+    main div:last-child {
+        display: none;
     }
 }
 
