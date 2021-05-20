@@ -112,17 +112,95 @@ main div button {
     header {
         background-image: url('../Photos/news.jpg');
     }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    main div {
+        margin: 10px 0;
+    }
+
+    main div:first-of-type {
+        margin-top: 25px;
+    }
+
+    main div:last-of-type {
+        margin-bottom: 25px;
+    }
+
+    img {
+        background-color: white;
+        width: 100%;
+    }
+
+    div h2 {
+        padding-left: 8px;
+        font-weight: 600;
+    }
+
+    div p {
+        font-size: 15px;
+        padding: 0 20px 10px 10px;
+        text-align: justify;
+    }
+
+    main div {
+        flex-basis: 100px;
+        margin-bottom: 15px;
+        background-color: rgba(232, 228, 228);
+        border: 2px solid gray;
+        font-weight: 500;
+        width: 95%;
+    }
+
+    /* main div:first-of-type {
+        width: 95%;
+    } */
+
+    main div button {
+        font-style: italic;
+        font-size: 15px;
+        border-radius: 10px;
+        height: 50px;
+        padding-left: 0 15px 0 15px;
+        margin: 0 0 12px 8px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-width: 350px;
+        border: 2px solid grey;
+        margin: 25px 0 0 0;
+        height: 805px;
+    }
+
+    aside div {
+        display: flex;
+        border: 2px solid gray;
+        height: 200px;
+        align-items: center;
+        padding-left: 20px;
+        font-weight: 500;
+    }
+
+    aside div:first-of-type {
+        background-color: rgba(0, 0, 0, .84);
+        color: white;
+    }
 }
 
 @media (max-width: 1199px) {
-    /* aside {
-        flex-basis: 450px;
-        background-image: url('../Photos/maps.PNG');
-        background-position-y: 380px;
-        background-position-x: center;
-        border: 2px solid grey;
-        margin-bottom: 35px;
-    } */
+
+    aside {
+        display: none;
+    }
 
     header {
         background-image: url('../Photos/news.jpg');

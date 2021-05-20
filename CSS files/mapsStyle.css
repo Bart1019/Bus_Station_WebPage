@@ -163,7 +163,7 @@ aside {
         flex-basis: 40%;
         min-width: 400px;
         background-image: url("../Photos/europe.png");
-        height: 1280px;
+        margin-bottom: 20px;
         margin-top: 87px;
         border: 2px solid gray;
         background-position-x: center;
