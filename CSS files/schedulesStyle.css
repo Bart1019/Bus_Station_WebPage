@@ -151,22 +151,98 @@ th {
     header {
         background-image: url('../Photos/schedule.jpg');
     }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    .mobileSchedule {
+        display: none;
+    }
+
+    .mainSectionTable {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        justify-self: stretch;
+        border: 3px solid rgb(112, 112, 112);
+        background-color: rgba(232, 228, 228);
+        margin: 15px;
+        margin-bottom: 0;
+        border-radius: 20px;
+    }
+
+    .mainSectionTable:nth-of-type(2) {
+        margin-bottom: 15px;
+    }
+
+    tr th {
+        color: rgb(112, 112, 112);
+        font-size: 25x;
+        padding-top: 4px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    tr td {
+        font-size: 20px;
+        padding-top: 20px;
+        padding-left: 110px;
+    }
+
+    tr td:last-of-type {
+        padding-left: -10px;
+    }
+
+    .tableTopStripe {
+        position: absolute;
+        width: 97%;
+        height: 5px;
+        background-color: rgb(112, 112, 112);
+        top: 28%;
+        left: 1.5%;
+        border-radius: 10px;
+    }
+
+    .tableBottomStripe {
+        position: absolute;
+        width: 97%;
+        height: 5px;
+        background-color: rgb(112, 112, 112);
+        bottom: 4%;
+        left: 1.5%;
+        border-radius: 10px;
+    }
+
+    .mainSectionTable p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 20px;
+        font-weight: 500;
+        height: 80px;
+        color: white;
+        background-color: rgba(0, 0, 0, .84);
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, .84);
+        transform: translateY(-4%);
+    }
 }
 
 @media (max-width: 1199px) {
-    /* aside {
-        flex-basis: 450px;
-        background-image: url('../Photos/maps.PNG');
-        background-position-y: 380px;
-        background-position-x: center;
-        border: 2px solid grey;
-        margin-bottom: 35px;
-    } */
-
     header {
         background-image: url('../Photos/schedule.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: right;
+    }
+
+    .desktopSchedule {
+        display: none;
     }
 }
