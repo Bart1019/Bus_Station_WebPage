@@ -329,15 +329,6 @@ main {
     transform: translate(-98%, -50%);
 }
 
-.buyStripe {
-    display: flex;
-    flex-basis: 100%;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: rgba(232, 228, 228);
-    margin-bottom: 20px;
-}
-
 .searchOutcome div button {
     width: 150px;
     height: 55px;
@@ -402,12 +393,12 @@ main {
 
     .departureInput {
         width: 13vw;
-        text-align: right;
+        text-align: center;
     }
 
     .returnInput {
         width: 13vw;
-        text-align: right;
+        text-align: center;
     }
 
     .ticketsInput {
@@ -484,12 +475,210 @@ main {
         font-size: 20px;
         opacity: .84;
     }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    .searchOutcome {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        flex-grow: 1;
+        background-color: white;
+    }
+
+    .searchOutcome:first-of-type {
+        margin-top: 15px;
+    }
+
+    .searchOutcome:nth-of-type(2),
+    .searchOutcome:nth-of-type(3),
+    .searchOutcome:nth-of-type(4) {
+        margin-top: 10px;
+    }
+
+    .searchOutcome:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .fromTo {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+        width: 18%;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .fromTo p:first-of-type {
+        font-weight: 500;
+    }
+
+    .fromTo p:nth-of-type(3) {
+        font-weight: 900;
+        padding-left: 15px;
+    }
+
+    .fromTo p:nth-of-type(4) {
+        transform: translateX(-20px);
+    }
+
+    .fromTo p:nth-of-type(5) {
+        font-style: italic;
+    }
+
+    .fromTo p:last-of-type {
+        transform: translateX(15px);
+        font-style: italic;
+    }
+
+    .fromTo p:first-of-type,
+    .fromTo p:nth-of-type(2),
+    .fromTo p:nth-of-type(3),
+    .fromTo p:nth-of-type(4) {
+        font-size: 25px;
+    }
+
+    .fromTo p:nth-of-type(2),
+    .fromTo p:nth-of-type(3),
+    .fromTo p:nth-of-type(4) {
+        width: 33%;
+    }
+
+    .fromTo p:nth-of-type(5),
+    .fromTo p:nth-of-type(6) {
+        width: 50%;
+    }
+
+    .travelTime p {
+        font-size: 25px;
+    }
+
+    .travelTime p:first-of-type {
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+
+    .travelTime {
+        height: 150px;
+        width: 14%;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .busAnimation {
+        display: flex;
+        align-self: center;
+        position: relative;
+        width: 45%;
+        height: 60px;
+    }
+
+    .busAnimation .stripe {
+        align-self: center;
+    }
+
+    .busAnimation .circle {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius: 50px;
+    }
+
+    .busAnimation .circle:first-of-type {
+        top: 50%;
+        left: 2%;
+        transform: translate(-2%, -50%);
+    }
+
+    .busAnimation .circle:nth-of-type(2) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: rgba(232, 228, 228);
+        background-image: url("../Photos/busSide.svg");
+        border: 2px solid black;
+        top: 50%;
+        left: 4%;
+        transform: translate(-4%, -50%);
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .busAnimation .circle:nth-of-type(2):hover {
+        transition: 1s;
+        top: 50%;
+        left: 90%;
+        transform: translateX(-90%, 50%);
+    }
+
+    .busAnimation .circle:last-of-type {
+        top: 50%;
+        left: 98%;
+        transform: translate(-98%, -50%);
+    }
+
+    .buyStripe {
+        display: flex;
+        position: relative;
+        flex-basis: 13%;
+        height: 150px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        /* background-color: rgba(232, 228, 228); */
+    }
+
+    .searchOutcome .buyStripe button {
+        width: 150px;
+        height: 55px;
+        font-size: 18px;
+        border-radius: 10px;
+        position: absolute;
+        top: 25%;
+        left: 17%;
+    }
+
+    .stripe {
+        position: absolute;
+        width: 94%;
+        height: 3px;
+        background-color: black;
+        border-radius: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    .mobileView {
+        display: none;
+    }
 }
 
 @media (max-width: 1199px) {
     section {
         flex-direction: column;
     }
+
+    .buyStripe {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: rgba(232, 228, 228);
+        margin-bottom: 20px;
+    }
+
 
     aside {
         flex-basis: 450px;
@@ -511,5 +700,9 @@ main {
 
     .offMobileUl {
         display: block;
+    }
+
+    .desktopView {
+        display: none;
     }
 }
