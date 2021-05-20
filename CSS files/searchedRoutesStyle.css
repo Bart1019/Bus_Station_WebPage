@@ -59,7 +59,6 @@ label {
 .fa-sync-alt:hover,
 .fa-plus:hover,
 .fa-minus:hover {
-    background-color: red;
     cursor: pointer;
 }
 
@@ -170,7 +169,7 @@ select {
     background-color: black;
     border: none;
     border-radius: 0;
-    bottom: 4%;
+    bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
     height: 40px;
@@ -361,11 +360,129 @@ main {
 }
 
 @media (min-width: 1200px) {
-    @media (min-width: 1200px) {
+    header {
+        display: flex;
+        align-self: stretch;
+        flex-basis: 400px;
+        align-items: stretch;
+        background-image: url('../Photos/vlc.jpg');
+        background-size: cover;
+        background-position: center;
+    }
 
-        header {
-            background-image: url('../Photos/vlc.jpg');
-        }
+    .headerWrapper {
+        display: flex;
+        position: relative;
+        width: 55%;
+        height: 350px;
+        margin: 25px 0 0 430px;
+        background-color: rgba(0, 0, 0, .4);
+
+    }
+
+    .fa-minus {
+        position: absolute;
+        transform: translateY(9.5%);
+        left: 9.1vw;
+    }
+
+    .fa-plus {
+        transform: translateY(2%);
+    }
+
+    .fromInput {
+        width: 13vw;
+        padding-left: 25px;
+    }
+
+    .toInput {
+        width: 13vw;
+        padding-left: 25px;
+    }
+
+    .departureInput {
+        width: 13vw;
+        text-align: right;
+    }
+
+    .returnInput {
+        width: 13vw;
+        text-align: right;
+    }
+
+    .ticketsInput {
+        transform: translateY(9.5%);
+        width: 7vw;
+        text-align: center;
+    }
+
+    select {
+        width: 11.33vw;
+        text-align-last: center;
+    }
+
+    .topHeaderSection div:first-child {
+        position: absolute;
+        top: 6%;
+        left: 3.75vw;
+        transform: translate(-5%, -10%);
+    }
+
+    .topHeaderSection div:nth-child(2) {
+        position: absolute;
+        top: 35%;
+        left: 11vw;
+        transform: translateY(-15%);
+    }
+
+    .topHeaderSection div:last-child {
+        position: absolute;
+        top: 55%;
+        left: 3.75vw;
+        transform: translate(-5%, -30%);
+    }
+
+    .middleHeaderSection div:first-child {
+        position: absolute;
+        top: 13.5%;
+        left: 21vw;
+        transform: translate(-6%, -52%);
+    }
+
+    .middleHeaderSection div:nth-child(2) {
+        position: absolute;
+        top: 58.5%;
+        left: 20.5vw;
+        transform: translateY(-51.5%);
+    }
+
+    .middleHeaderSection div:nth-child(3) {
+        position: absolute;
+        top: 17.3%;
+        left: 39vw;
+        transform: translate(-5.5%, -75%);
+    }
+
+    .middleHeaderSection div:last-child {
+        position: absolute;
+        top: 53.5%;
+        left: 39vw;
+        transform: translateY(-67%);
+    }
+
+    .bottomHeaderSection button {
+        position: absolute;
+        background-color: black;
+        border: none;
+        border-radius: 0;
+        bottom: 6%;
+        left: 52%;
+        transform: translateX(-50%);
+        height: 40px;
+        width: 200px;
+        padding: 10px 0;
+        font-size: 20px;
+        opacity: .84;
     }
 }
 
