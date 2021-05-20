@@ -246,7 +246,6 @@ li {
     }
 
     .coronaNav p:first-of-type {
-        /* font-size: 30px; */
         transform: translateY(4px);
         padding-left: 20%;
     }
@@ -313,30 +312,28 @@ li {
         position: relative;
         display: flex;
         align-items: center;
-        /* border: 2px solid red; */
     }
 
     .bottomNavWrapper .bottomLine {
         position: absolute;
-        height: 62px;
+        height: 56px;
         width: 3px;
         background-color: rgba(232, 228, 228);
         border-radius: 20px;
-        transform: translate(20vw, -6px);
+        transform: translate(20vw, -8px);
     }
 
     .bottomNav .bottomLine:last-of-type {
         position: absolute;
-        height: 120px;
+        height: 122px;
         width: 3px;
         background-color: rgba(0, 0, 0, .84);
         border-radius: 20px;
-        transform: translate(20vw, 59px);
+        transform: translate(20vw, 54px);
     }
 
     .menuItems {
         transform: translateY(-7px);
-        /* border: 2px solid red; */
     }
 
     .menuItems li {
