@@ -22,10 +22,6 @@ header {
     background-position: center;
 }
 
-.headerImg {
-    opacity: .75;
-}
-
 .headerWrapper {
     display: flex;
     position: relative;

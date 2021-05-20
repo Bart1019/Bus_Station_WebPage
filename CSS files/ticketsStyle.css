@@ -281,13 +281,20 @@ main div h2 {
         flex-basis: 100%;
         height: 400px;
         margin-top: 20px;
+        position: relative;
+    }
+
+    .ticketDiv:first-of-type::before {
+        content: "";
         background-image: url('../Photos/vlc.jpg');
         background-size: cover;
         background-position-y: center;
-    }
-
-    .ticketDiv:first-of-type::after {
-        opacity: 0.6;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.75;
     }
 
     .ticketDiv:nth-of-type(2) {
