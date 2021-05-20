@@ -266,10 +266,6 @@ textarea {
         margin-top: 10px;
     }
 
-    main div:nth-child(4) textarea {
-        width: 95%;
-    }
-
     main div:nth-child(4) button {
         width: 150px;
         height: 35px;
