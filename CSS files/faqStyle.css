@@ -177,7 +177,6 @@ main div button {
 
     main div:last-child {
         display: flex;
-        /* position: relative; */
         flex-direction: row;
         flex-basis: 98%;
         flex-wrap: wrap;
@@ -204,7 +203,7 @@ main div button {
     }
 
     main div:last-child textarea {
-        width: 33.75%;
+        width: 435px;
         margin-left: 37.75%;
         margin-top: 20px;
     }
