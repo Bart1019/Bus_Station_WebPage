@@ -59,7 +59,6 @@ label {
 .fa-sync-alt:hover,
 .fa-plus:hover,
 .fa-minus:hover {
-    background-color: red;
     cursor: pointer;
 }
 
