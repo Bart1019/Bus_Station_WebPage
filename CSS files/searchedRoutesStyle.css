@@ -609,17 +609,10 @@ main {
         background-image: url("../Photos/busSide.svg");
         border: 2px solid black;
         top: 50%;
-        left: 4%;
+        left: 7%;
         transform: translate(-4%, -50%);
         cursor: pointer;
         z-index: 1;
-    }
-
-    .busAnimation .circle:nth-of-type(2):hover {
-        transition: 1s;
-        top: 50%;
-        left: 90%;
-        transform: translateX(-90%, 50%);
     }
 
     .busAnimation .circle:last-of-type {
@@ -635,7 +628,18 @@ main {
         height: 150px;
         margin-bottom: 20px;
         margin-top: 20px;
-        /* background-color: rgba(232, 228, 228); */
+    }
+
+    .searchOutcome:hover .buyStripe {
+        transition: .1s;
+        background-color: rgba(232, 228, 228);
+    }
+
+    .searchOutcome:hover .busAnimation .circle:nth-of-type(2) {
+        transition: .5s;
+        top: 50%;
+        left: 45%;
+        transform: translateX(-45%, 50%);
     }
 
     .searchOutcome .buyStripe button {
