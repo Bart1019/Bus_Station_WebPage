@@ -192,7 +192,15 @@ th {
     tr td {
         font-size: 20px;
         padding-top: 20px;
-        padding-left: 110px;
+        padding-left: 9%;
+    }
+
+    main table tr th:first-of-type {
+        padding-left: 6%;
+    }
+
+    main table tr th:nth-of-type(3) {
+        padding-left: 8%;
     }
 
     tr td:last-of-type {

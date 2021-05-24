@@ -150,15 +150,6 @@ main div {
 }
 
 @media (max-width: 1199px) {
-    /* aside {
-        flex-basis: 450px;
-        background-image: url('../Photos/maps.PNG');
-        background-position-y: 380px;
-        background-position-x: center;
-        border: 2px solid grey;
-        margin-bottom: 35px;
-    } */
-
     header {
         background-image: url('../Photos/taxi.jpg');
         background-size: cover;
