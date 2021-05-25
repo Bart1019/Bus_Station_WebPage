@@ -333,7 +333,6 @@ main div:nth-child(4) {
 }
 
 aside {
-    background-color: cadetblue;
     flex-basis: 30%;
     min-width: 400px;
 }
@@ -494,6 +493,10 @@ aside {
         text-align: center;
     }
 
+    .mainSectionTable table tr th:nth-of-type(3) {
+        padding-left: 6%;
+    }
+
     tr td {
         font-size: 18px;
         padding-top: 18px;
@@ -609,10 +612,112 @@ aside {
 
     aside {
         flex-basis: 40%;
-        min-width: 50%;
+        min-width: 600px;
         margin: 15px 0 15px 0;
         background-image: url("../Photos/europe.png");
         background-size: contain;
+    }
+
+    aside .destinationsWrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .destination {
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        border-radius: 50px;
+        background-color: royalblue;
+        border-radius: 2px solid royalblue;
+        cursor: pointer;
+    }
+
+    .destination:nth-of-type(1) {
+        top: 70.25%;
+        left: 12.5%;
+        transform: translate(-12.5%, -70.25%);
+    }
+
+    .destination:nth-of-type(2) {
+        top: 64%;
+        left: 18%;
+        transform: translate(-18%, -64%);
+    }
+
+    .destination:nth-of-type(3) {
+        top: 67%;
+        left: 24%;
+        transform: translate(-24%, -67%);
+        background-color: sandybrown;
+    }
+
+    .destination:nth-of-type(4) {
+        top: 62.2%;
+        left: 32%;
+        transform: translate(-32%, -62.2%);
+    }
+
+    .destination:nth-of-type(5) {
+        top: 50%;
+        left: 40%;
+        transform: translate(-40%, -50%);
+        background-color: seagreen;
+    }
+
+    .destination:nth-of-type(6) {
+        top: 53%;
+        left: 32%;
+        transform: translate(-32%, -53%);
+        background-color: sandybrown;
+    }
+
+    .destination:nth-of-type(7) {
+        top: 59%;
+        left: 43%;
+        transform: translate(-43%, -59%);
+    }
+
+    .destination:nth-of-type(8) {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        background-color: seagreen;
+    }
+
+    .destination:nth-of-type(9) {
+        top: 47%;
+        left: 55%;
+        transform: translate(-55%, -47%);
+    }
+
+    .destination:nth-of-type(10) {
+        top: 40%;
+        left: 74%;
+        transform: translate(-74%, -40%);
+        background-color: sandybrown;
+    }
+
+    .destination:nth-of-type(1),
+    .destination:nth-of-type(2),
+    .destination:nth-of-type(4),
+    .destination:nth-of-type(7),
+    .destination:nth-of-type(9) {
+        animation: destinationBlue 3s infinite linear;
+    }
+
+    .destination:nth-of-type(3),
+    .destination:nth-of-type(6),
+    .destination:nth-of-type(10) {
+        animation: destinationBrown 3s infinite linear;
+
+    }
+
+    .destination:nth-of-type(5),
+    .destination:nth-of-type(8) {
+        animation: destinationGreen 3s infinite linear;
+
     }
 }
 
@@ -629,5 +734,23 @@ aside {
         background-image: url('../Photos/vlc.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+    }
+}
+
+@keyframes destinationBlue {
+    50% {
+        box-shadow: 0px 0px 20px darkblue;
+    }
+}
+
+@keyframes destinationGreen {
+    50% {
+        box-shadow: 0px 0px 20px darkgreen;
+    }
+}
+
+@keyframes destinationBrown {
+    50% {
+        box-shadow: 0px 0px 20px brown;
     }
 }
